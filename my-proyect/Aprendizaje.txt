@@ -1,0 +1,2 @@
+ngModel sirve para mostrar el valor actual del input, y para actualizar el valor del input.
+

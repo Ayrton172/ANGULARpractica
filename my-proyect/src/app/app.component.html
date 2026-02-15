@@ -3,3 +3,13 @@
 <h3 (click)="addOne()">Number: {{number}}</h3>
 <app-header></app-header>
 <input type="text" [(ngModel)]="userName"/>
+
+@if (conditional) {
+    <h2>La condicion se cumple</h2>
+} 
+@else if (conditional2) {
+    <h2>La condicion 2 se cumple</h2>
+}
+@else {
+    <h2>La condicion 2 NO se cumple</h2>
+}

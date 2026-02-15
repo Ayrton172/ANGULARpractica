@@ -16,4 +16,6 @@ export class AppComponent {
   addOne() {
     this.number++;
   }
+  conditional: boolean = true;
+  conditional2: boolean = false;
 }
