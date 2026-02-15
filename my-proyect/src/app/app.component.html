@@ -3,7 +3,8 @@
 <h3 (click)="addOne()">Number: {{number}}</h3>
 <app-header></app-header>
 <input type="text" [(ngModel)]="userName"/>
-
+<h2>-----------------------------------------</h2>
+<h2>Condicionales (if, else if, else)</h2>
 @if (conditional) {
     <h2>La condicion se cumple</h2>
 } 
@@ -13,3 +14,22 @@
 @else {
     <h2>La condicion 2 NO se cumple</h2>
 }
+<h2>-----------------------------------------</h2>
+<h2>Bucle &#64;For</h2>
+
+@for (item of movies; track $index) {
+    <h3>{{item}}</h3>
+}
+<h2>-----------------------------------------</h2>
+<h2>Bucle &#64;For a partir de objetos</h2>
+
+<ul>
+    @for (animal of animals; track animal.id) {
+    <li>
+        <h3>{{animal.name}}</h3>
+        <h3>{{animal.type}}</h3>
+        <img src="{{animal.img}}" alt="" width="350" />
+    </li>
+    }
+</ul>
+<h2>-----------------------------------------</h2>
